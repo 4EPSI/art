@@ -30,6 +30,8 @@
     padding-left: 15px;
     background: #f6f6f6;
   }
+ 
+  
   a {
     color: inherit;
   }
@@ -66,7 +68,14 @@
     color: #ff6d6d;
     font-size: 16px;
   }
-  
+  .title {
+    font-size: 39px;
+    color: #282828;
+  }
+  .text {
+    color: #858584;
+    font-size: 16px;
+  }
   /* header */
   .header {
     height: 80px;
@@ -248,7 +257,7 @@
     margin-bottom: 15px;
   }
   .fon {
-    /* width: 40%; */
+    height: 100%;
     background: #ececec;
     display: flex;
     justify-content: flex-end;
@@ -266,8 +275,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 30px;
-    
   }
   .section_fishka .container {
     padding: 30px;
@@ -301,8 +308,11 @@
   
 
   /* section_resposive */
-  .section_resposive {
-
+  .figured_left {
+    width: 0; 
+    height: 0; 
+    border-bottom: 100px solid #ff6d6d;
+    border-right: 100px solid transparent;
   }
   .new.top {
     color: #ff6d6d;
@@ -334,14 +344,89 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+  }
+  .brand_content {
+    text-align: center;
+    padding: 30px;
+  }
+  .brand_title {
+    font-size: 22px;
+    color: #ffffff;
+    padding-top: 30px;
+  }
+  .founder {
+    font-size: 15px;
+    color: #ff6d6d;
+    padding-bottom: 30px;
+  }
+  .brand_text {
+    font-size: 16px;
+    color: #c6c7c7;
+  }
+  .brand_text.color {
+    color: #b4b4b6;
+  }
+  .brand_text.col {
+    color: #b3b3b5;
+  } 
+  .brand_foto {
+    padding-top: 30px;
+  }
+  .item {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+  .brand_item {
+    padding: 30px;
+  }
+  /* section_features */
+  .section_features {
+    background: #f6f5f3;
+    text-align: center;
+  }
+  .new.top {
+    padding-top: 30px;
+  }
+  .title.features {
+    padding-bottom: 30px;
+  }
+  .text.features {
+    padding-bottom: 30px;
+  }
+  /* section_basement */
+  .section_basement {
+    background: #323969;
+    text-align: center;
+    padding: 30px;
+  }
+  .section_basement input {
+    width: 100%;
+  }
+  .title.basement {
+    padding-bottom: 30px;
+    color: #ffffff;
+  }
+  .basement_text {
+    font-size: 16px;
+    color: #b8b9c3;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+  }
+  .button.basement {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
-
   /* footer */
-.footer {
+ .footer {
   position: relative;
-}
+ }
  .footer:after {
   content: '';
   position: absolute;
