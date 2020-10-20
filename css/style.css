@@ -5,6 +5,29 @@
     box-sizing: border-box;
   }
   /* general */
+  ::-webkit-input-placeholder {
+    color: #f6f5f3;
+  }
+  ::-moz-placeholder {
+      color: #f6f5f3;
+  }
+  :-ms-input-placeholder {
+      color: #f6f5f3;
+  }
+  ::-ms-input-placeholder {
+      color: #f6f5f3;
+  }
+  ::placeholder {
+      color: #f6f5f3;
+  }
+  ::-moz-selection {
+      background-color: #fb8686;
+      color: #fff;
+  }
+  ::selection {
+      background-color: #fb8686;
+      color: #fff;
+  }
   html,
   body {
     font-family: "Roboto", Arial, sans-serif;
@@ -30,7 +53,9 @@
     padding-left: 15px;
     background: #f6f6f6;
   }
- 
+  ul, ol {
+    list-style: none;
+  }
   
   a {
     color: inherit;
@@ -89,7 +114,7 @@
     margin: 5px;
   }
   a:hover {
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
 }
   /* header */
@@ -164,7 +189,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #fff;
+    background: #333;
     border-radius: 4px;
     opacity: 1;
     left: 0;
@@ -230,6 +255,7 @@
     display: flex;
     text-align: center;
     align-items: center;
+    overflow: hidden;
   }
   
   .platforms_title {
@@ -247,7 +273,7 @@
   /* section_choice */
   .section_choice {
     background: #ffffff;
-  
+    overflow: hidden;
   }
   .content {
     display: flex;
@@ -256,15 +282,23 @@
     padding: 30px;
     margin: auto;
     width: 60%;
+    /* height: 730px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .choice_rubric {
     color: #ff6d6d;
     font-size: 16px;
     padding-bottom: 10px;
   }
-  .section_choice_title {
+  .choice_title {
     color: #282828;
     font-size: 40px;
+    padding-right: 10px;
+  }
+  .choice_title.bottom {
+    padding-bottom: 30px;
   }
   .section_choice_title.bottom {
     padding-bottom: 30px;
@@ -295,9 +329,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-  .section_fishka .container {
-    padding: 30px;
+    overflow: hidden;
   }
   .fishka_content {
     padding: 30px;
@@ -323,11 +355,15 @@
     color: #858584;
     font-size: 16px;
     text-align: center;
+    padding-bottom: 30px;
   }
 
   
 
   /* section_resposive */
+  .section_resposive {
+    overflow: hidden;
+  }
   .figured_left {
     width: 0; 
     height: 0; 
@@ -345,6 +381,7 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+    height: 550px;
   }
   .resposive_title {
     color: #282828;
@@ -359,7 +396,12 @@
     font-size: 16px;
     max-width: 460px;
   }
-
+  .resposive_content {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /* section_brand */
   .section_brand {
     background-image: url(../img/brand.png);
@@ -393,6 +435,14 @@
   } 
   .brand_foto {
     padding-top: 30px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .brand_foto img {
+    height: 250px;
+    width: 200px;
   }
   .item {
     display: flex;
@@ -426,6 +476,9 @@
   }
   .section_basement input {
     width: 100%;
+    background: #474d78;
+    border: 1px solid #999cb4;
+    border-radius: 3px;
   }
   .title.basement {
     padding-bottom: 10px;
@@ -435,6 +488,7 @@
     padding: 20px;
     color: #f6f5f3;
     text-align: end;
+    padding-right: 40px;
   }
   .basement_text {
     font-size: 16px;
@@ -448,6 +502,7 @@
     padding-bottom: 10px;
     padding-left: 70px;
     padding-right: 70px;
+    border-radius: 3px;
   }
 
   /* footer */
@@ -517,5 +572,37 @@
   background: #ff8a8a;
   color: #fff;
 }
+
+@media (max-width: 991px) {
+  .menu {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 8px rgb(0 0 0 / 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+  .menu.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-item {
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .burger {
+    display: block;
+  }
+  .choice_content {
+    width: 100%;
+  }
+}
+
 
 
