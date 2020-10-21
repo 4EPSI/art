@@ -616,6 +616,107 @@
   color: #fff;
 }
 
+/* Test form */
+.test_label {
+  position: relative;
+}
+.test_label input {
+  margin-bottom: 0;
+}
+.input_icon {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.input_text {
+  padding-right: 30px;
+}
+.test_form_container input::-webkit-input-placeholder {
+    color: rgb(167, 167, 167);
+  }
+.test_form_container input::-moz-placeholder {
+      color: rgb(167, 167, 167);
+  }
+.test_form_container input:-ms-input-placeholder {
+      color: rgb(167, 167, 167);
+  }
+.test_form_container input::-ms-input-placeholder {
+      color: rgb(167, 167, 167);
+  }
+.test_form_container input::placeholder {
+      color: rgb(167, 167, 167);
+  }
+
+  ::-webkit-input-placeholder { /* Chrome */
+    color: rgb(167, 167, 167);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgb(167, 167, 167);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(167, 167, 167);
+    opacity: 1;
+  }
+  :-moz-placeholder { /* Firefox 4 - 18 */
+    color: rgb(167, 167, 167);
+    opacity: 1;
+  }
+
+  /* test_work */
+  .test_work {
+    background: black;
+    text-align: end;
+  }
+  .input_text {
+    width: 300px;
+  }
+  .test_work_input {
+    position: relative;
+  }
+  .test_label_work {
+    position: relative;
+  }
+  .test_work_input input {
+    width: 100%;
+  }
+  .test_color {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  .input_user {
+    position: absolute;
+    right: 25px;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .input_tag {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  .test_color textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 15px;
+  }
+ 
+  .input_comment {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  
+  .bylka {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 @media (max-width: 991px) {
   .menu {
     position: fixed;

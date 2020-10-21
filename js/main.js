@@ -32,3 +32,4 @@ $('body').on('click', '.play', function (){
         $('.top_video')[0].pause();
     }
 });
+
