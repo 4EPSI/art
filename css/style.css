@@ -30,7 +30,7 @@
   }
   html,
   body {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Exo", Arial, sans-serif;
     font-size: 16px;
     height: 100%;
   }
@@ -45,7 +45,7 @@
   }
   input,
   textarea {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "Exo", Arial, sans-serif;
     font-size: 16px;
     margin-bottom: 15px;
     width: auto;
@@ -247,26 +247,68 @@
 
   /* sectiom_platforms */
   .sectiom_platforms {
-    background-image: url(../img/photo-1433354359170-23a4ae7338c6.png);
+    /* background-image: url(../img/photo-1433354359170-23a4ae7338c6.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     min-height: calc(100vh - 80px);
     display: flex;
     text-align: center;
     align-items: center;
     overflow: hidden;
+    position: relative;
   }
+  .sectiom_platforms .container {
+    position: relative;
+  }
+  .top_section_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    /* z-index: 1; */
+  } 
+  .top_section_video:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+  }
+  .top_section_video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
   
   .platforms_title {
     font-size: 60px;
-    color: #282828;
+    color: #fff;
+    font-weight: 300;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
   }
   .play {
-    padding: 30px;
+    display: block;
+    color: #fff;
+    font-size: 50px;
+    margin: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 50px;
+    transition: all 0.3s ease;
+  }
+  .play:hover {
+    color: #ff6d6d;
   }
   .platforms_text {
-    color: #767678;
+    color: #eee;
     font-size: 14px;
     padding: 20px;
   }
@@ -603,6 +645,18 @@
     width: 100%;
   }
 }
-
+@media (max-width: 767px) {
+  .platforms_title {
+    font-size: 38px;
+  }
+  .resposive_content, .resposive_img {
+    height: auto;
+  }
+  .resposive_content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+  }
+}
 
 

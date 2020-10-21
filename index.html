@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   
     <!-- fonts -->
-    <link href="fonts/roboto/fonts.css" rel="stylesheet" />
+    <!-- <link href="fonts/roboto/fonts.css" rel="stylesheet" /> -->
+    <link href="fonts/Exo/font.css" rel="stylesheet" />
     <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
 
     <!-- libs -->
@@ -49,14 +50,24 @@
 
     <main class="main">
         <div id="home" class="sectiom_platforms">
+            <!-- video -->
+            <div class="top_section_video">
+                <!-- <video autoplay muted loop playsinline poster="img/top_bg.png">
+                    <source src="img/video_sample.mp4" type="video/mp4">
+                </video> -->
+                <video class="top_video" loop playsinline poster="img/top_bg.png">
+                    <source src="img/video_sample.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- video end -->
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1 class="platforms_title">There is no other platforms</h1>
-                        <h2 class="platforms_title">for you as like</h2>
-                        <div class="play">
+                        <h1 class="platforms_title">There is no other platforms for you as like</h1>
+                        <!-- <div class="play">
                             <img src="img/play.png" alt="img">
-                        </div>
+                        </div> -->
+                        <i class="play fas fa-play-circle"></i>
                         <a class="button" href="#">Try now</a>
                         <div class="platforms_text">* No need to add cards details</div> 
                     </div>
