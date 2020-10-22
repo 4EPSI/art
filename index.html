@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>art</title>
-    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  
+
     <!-- fonts -->
     <!-- <link href="fonts/roboto/fonts.css" rel="stylesheet" /> -->
     <link href="fonts/Exo/font.css" rel="stylesheet" />
@@ -69,7 +69,7 @@
                         </div> -->
                         <i class="play fas fa-play-circle"></i>
                         <a class="button" href="#">Try now</a>
-                        <div class="platforms_text">* No need to add cards details</div> 
+                        <div class="platforms_text">* No need to add cards details</div>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.</p>
                             <p>Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
                         </div>
-                    </div>    
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="fon">
@@ -151,7 +151,7 @@
                     <div class="resposive_img">
                         <img src="img/macbook.png" alt="img">
                     </div>
-                 
+
                 </div>
                 <div class="col-md-6">
                     <div class="resposive_content">
@@ -173,7 +173,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <div id="team" class="section_brand">
             <div class="container">
@@ -231,7 +231,7 @@
                 </div>
             </div>
         </div>
-  
+
         <div id="pricing" class="section_features">
             <div class="container">
                 <div class="row">
@@ -320,7 +320,7 @@
                 </label>
                 <input type="text" value="123">
                 <select name="select">
-                    <option value="value1" >Значение 1</option> 
+                    <option value="value1" >Значение 1</option>
                     <option value="value2" selected>Значение 2</option>
                     <option value="value3">Значение 3</option>
                 </select>
@@ -333,34 +333,96 @@
         </div>
 
 
-        <div class="test_work test_form_container">
+        <div class="test_work test_form_container pt-4 pb-4">
             <div class="container">
-                <div class="test_color">
-                    <form action="#">
-                        <label class="test_label_work pr-3" for="test_text">
-                            <input  class="input_text"type="text"placeholder="Имя">
-                            <i class="input_user fas fa-user"></i>    
-                        </label>
-                        
-                        
-                        <label class="test_label_work" for="test_text">
-                            <input class="input_text" type="text" placeholder="E-mail">
-                            <i class="input_icon far fa-envelope"></i>
-                        </label>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="test_label_work" for="test_text">
+                                        <input  class="input_text"type="text"placeholder="Имя">
+                                        <i class="input_icon input_user fas fa-user"></i>
+                                    </label>
+                                </div>
+                                <div class="col-6">
+                                    <label class="test_label_work" for="test_text">
+                                        <input class="input_text" type="text" placeholder="E-mail">
+                                        <i class="input_icon far fa-envelope"></i>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label class="test_work_input d-flex" for="test_text">
+                                        <input class="input_text"type="text"placeholder="Тема">
+                                        <i class="input_icon input_tag fas fa-tag"></i>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="test_textarea">
+                                        <textarea class="pt-2 pb-2" name="cообщение" placeholder="Сообщение" required></textarea>
+                                        <i class="input_icon input_comment fas fa-comment"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
 
-                        
-                        <label class="test_work_input d-flex" for="test_text">
-                            <input class="input_text"type="text"placeholder="Тема">
-                            <i class="input_tag fas fa-tag"></i>
-                        </label>
-                        <textarea name="cообщение" placeholder="Сообщение" required></textarea>
-                        <i class="input_comment fas fa-comment"></i>
-                        
+                                <div class="col-12">
 
-                        <button class="bylka" type="reset">Сбросить</button>
-                        <button class="bylka" type="submit">Отправить</button>
-                    </form>
-                </div>
+                                        <h4>Выбор пола</h4>
+                                        <div class="d-flex align-items-center">
+                                            <label class="d-flex align-items-center mr-2" for="pol1">
+                                                <input class="mb-0 mr-2" id="pol1" type="radio" name="radio">Мужской</label>
+                                            <label class="d-flex align-items-center mr-2" for="pol2">
+                                                <input class="mb-0 mr-2" id="pol2" type="radio" name="radio">Женский</label>
+                                        </div>
+
+                                </div>
+                                <div class="col-12">
+
+                                        <h3>ваш день рождения</h3>
+                                        <input type="date">
+
+                                </div>
+                                <div class="col-12">
+
+                                        <h3>выбор пива</h3>
+                                         <label for="beer1"><input id="beer1" type="checkbox" name="beer1" required>dark</label>
+                                         <label for="beer2"><input id="beer2" type="checkbox" name="beer2" required>light</label>
+
+                                </div>
+                                <div class="col-12">
+
+                                        <h3>ваш город</h3>
+                                        <select name="select">
+                                            <option value="value1">Киев</option>
+                                            <option value="value2" selected>Харьков</option>
+                                            <option value="value3">Херсон</option>
+                                            <option value="value4">Днепр</option>
+                                        </select>
+
+                                </div>
+                                <div class="col-12">
+
+                                        <h3>подписаться на рассылку</h3>
+                                         <label for=""><input id="beer1" type="checkbox" name="" required></label>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                    <button class="bylka mr-3" type="reset">Сбросить</button>
+                    <button class="bylka" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
 
@@ -431,7 +493,7 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </footer>
