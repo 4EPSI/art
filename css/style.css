@@ -340,12 +340,19 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    position: relative;
+  }
+  .fon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .right_corner {
-    width: 0;
-    height: 0;
     border-bottom: 100px solid #fb8686;
     border-left: 100px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   /* section_fishka */
   .section_fishka {
